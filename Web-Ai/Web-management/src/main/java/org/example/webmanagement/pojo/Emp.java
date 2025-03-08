@@ -19,5 +19,5 @@ public class Emp {
     private Integer deptId;     // 关联的部门ID
     private LocalDateTime createTime; // 创建时间
     private LocalDateTime updateTime; // 修改时间
-
+    private String deptName;
 }
