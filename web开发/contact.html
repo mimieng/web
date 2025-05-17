@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 打铁花非遗文化</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="打铁花logo">
+                <h1>打铁花非遗文化</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li>
+                        <a href="history.html">历史渊源</a>
+                        <ul class="sub-nav">
+                            <li><a href="history.html#origin">起源</a></li>
+                            <li><a href="history.html#development">发展</a></li>
+                            <li><a href="history.html#modern">现代传承</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="techniques.html">技艺展示</a>
+                        <ul class="sub-nav">
+                            <li><a href="techniques.html#tools">工具介绍</a></li>
+                            <li><a href="techniques.html#process">制作工艺</a></li>
+                            <li><a href="techniques.html#styles">流派风格</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="masters.html">传承人</a></li>
+                    <li class="active"><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <div class="page-title">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>加入打铁花非遗保护与传承</p>
+        </div>
+    </div>
+
+    <!-- 内容区域 -->
+    <main>
+        <div class="container">
+            <section class="contact-section">
+                <div class="contact-info">
+                    <h2 class="section-title">联系方式</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/content/icon-location.png" alt="地址">
+                        </div>
+                        <div class="info-content">
+                            <h3>地址</h3>
+                            <p>中国传统工艺博物馆</p>
+                            <p>北京市朝阳区文化路88号</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/content/icon-phone.png" alt="电话">
+                        </div>
+                        <div class="info-content">
+                            <h3>电话</h3>
+                            <p>总机：010-12345678</p>
+                            <p>咨询：123-4567-8910</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/content/icon-email.png" alt="邮箱">
+                        </div>
+                        <div class="info-content">
+                            <h3>邮箱</h3>
+                            <p>info@tiehua.com</p>
+                            <p>support@tiehua.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img src="images/content/icon-time.png" alt="开放时间">
+                        </div>
+                        <div class="info-content">
+                            <h3>开放时间</h3>
+                            <p>周二至周日：9:00-17:00</p>
+                            <p>周一闭馆（法定节假日除外）</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>关注我们</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/content/icon-weibo.png" alt="微博"></a>
+                            <a href="#" class="social-icon"><img src="images/content/icon-wechat.png" alt="微信"></a>
+                            <a href="#" class="social-icon"><img src="images/content/icon-douyin.png" alt="抖音"></a>
+                            <a href="#" class="social-icon"><img src="images/content/icon-bilibili.png" alt="哔哩哔哩"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h2 class="section-title">联系表单</h2>
+                    <p class="form-intro">如果您对打铁花技艺感兴趣，或有任何问题和建议，请填写以下表单，我们将尽快与您联系。</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱 <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="请输入您的邮箱地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">电话</label>
+                            <input type="tel" id="phone" name="phone" placeholder="请输入您的联系电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题 <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">请选择主题</option>
+                                <option value="咨询">技艺咨询</option>
+                                <option value="参观">参观预约</option>
+                                <option value="合作">合作洽谈</option>
+                                <option value="建议">意见建议</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required placeholder="请输入您的留言内容"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                            <label for="subscribe">订阅我们的电子通讯，获取最新活动和资讯</label>
+                        </div>
+                        <div class="form-group radio-group">
+                            <p class="radio-title">您是如何了解到我们的？</p>
+                            <div class="radio-options">
+                                <div class="radio-option">
+                                    <input type="radio" id="source1" name="source" value="搜索引擎">
+                                    <label for="source1">搜索引擎</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="source2" name="source" value="社交媒体">
+                                    <label for="source2">社交媒体</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="source3" name="source" value="朋友推荐">
+                                    <label for="source3">朋友推荐</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="source4" name="source" value="其他">
+                                    <label for="source4">其他</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="file">上传文件（可选）</label>
+                            <input type="file" id="file" name="file">
+                            <p class="file-note">支持JPG、PNG、PDF格式，大小不超过5MB</p>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">提交</button>
+                            <button type="reset" class="reset-btn">重置</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="map-section">
+                <h2 class="section-title">我们的位置</h2>
+                <div class="map-container">
+                    <img src="images/content/map.jpg" alt="地图" class="map-image">
+                </div>
+                <div class="map-info">
+                    <h3>交通指南</h3>
+                    <div class="transport-options">
+                        <div class="transport-option">
+                            <h4><img src="images/content/icon-subway.png" alt="地铁"> 地铁</h4>
+                            <p>乘坐地铁5号线至文化路站，从A出口出站，向北步行500米即到</p>
+                        </div>
+                        <div class="transport-option">
+                            <h4><img src="images/content/icon-bus.png" alt="公交"> 公交</h4>
+                            <p>乘坐301、302、303路公交车至传统工艺博物馆站下车即到</p>
+                        </div>
+                        <div class="transport-option">
+                            <h4><img src="images/content/icon-car.png" alt="自驾"> 自驾</h4>
+                            <p>导航至"中国传统工艺博物馆"，馆内设有地下停车场</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section">
+                <h2 class="section-title">常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>打铁花表演有固定时间吗？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们每周六、周日晚上8点有固定的打铁花表演，节假日期间会增加场次。具体表演时间请关注官方公告或致电咨询。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何预约参观打铁花工作室？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以通过本页面的联系表单或电话预约参观打铁花工作室。建议提前3-5天预约，团体参观需提前一周预约。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>是否提供打铁花体验活动？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们定期举办打铁花体验活动，让参与者在专业人员指导下体验打铁花的乐趣。活动信息会在官方网站和社交媒体上发布。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何成为打铁花传承人的学徒？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>如果您对学习打铁花技艺有浓厚兴趣，可以通过联系表单提交申请，说明您的背景和学习意向。我们会安排专人与您联系，进行进一步交流。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="打铁花logo">
+                    <h3>打铁花非遗文化</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">历史渊源</a></li>
+                        <li><a href="techniques.html">技艺展示</a></li>
+                        <li><a href="masters.html">传承人</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系方式</h4>
+                    <p><i class="icon-location"></i> 地址：中国传统工艺博物馆</p>
+                    <p><i class="icon-phone"></i> 电话：123-4567-8910</p>
+                    <p><i class="icon-email"></i> 邮箱：info@tiehua.com</p>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>订阅我们</h4>
+                    <p>获取最新的打铁花活动和资讯</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="您的邮箱地址">
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 打铁花非遗文化网站 版权所有</p>
+                <p>本网站内容仅用于非遗文化传播，如有侵权请联系我们删除</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
