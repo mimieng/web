@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技艺传承 - 蜀绣非遗技艺</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/techniques.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="蜀绣非遗技艺">
+                <h1>蜀绣非遗技艺</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li>
+                        <a href="history.html">蜀绣历史</a>
+                        <ul class="sub-nav">
+                            <li><a href="history.html#origin">起源</a></li>
+                            <li><a href="history.html#development">发展</a></li>
+                            <li><a href="history.html#modern">现代传承</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="craftsmanship.html">技艺传承</a>
+                        <ul class="sub-nav">
+                            <li><a href="#techniques">绣制技法</a></li>
+                            <li><a href="#masters">传承大师</a></li>
+                            <li><a href="#tools">工具材料</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">作品欣赏</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>技艺传承</h1>
+            <p>探索蜀绣精湛技艺与传承之道</p>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="craftsmanship-page">
+        <!-- 绣制技法部分 -->
+        <section id="techniques" class="techniques-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">绣制技法</h2>
+                <div class="intro-text">
+                    <p>蜀绣以其精湛的技艺和独特的针法著称，形成了12大类针法，100多种变化。蜀绣的针法灵活多变，能够表现丰富的艺术效果，是蜀绣艺术的核心所在。</p>
+                </div>
+                
+                <div class="techniques-showcase">
+                    <div class="technique-tabs">
+                        <div class="tab active" data-tab="tab1">平针绣</div>
+                        <div class="tab" data-tab="tab2">乱针绣</div>
+                        <div class="tab" data-tab="tab3">滚针绣</div>
+                        <div class="tab" data-tab="tab4">掺针绣</div>
+                        <div class="tab" data-tab="tab5">套针绣</div>
+                    </div>
+                    
+                    <div class="technique-content">
+                        <div class="technique-panel active" id="tab1">
+                            <div class="technique-image">
+                                <img src="images/technique-pingzhen.jpg" alt="平针绣">
+                            </div>
+                            <div class="technique-info">
+                                <h3>平针绣</h3>
+                                <p>平针绣是蜀绣最基本的针法，针脚平整均匀，排列有序，主要用于绣制平面图案。平针绣可以表现出丝绸般的光泽和质感，是蜀绣中最常用的针法之一。</p>
+                                <h4>特点：</h4>
+                                <ul>
+                                    <li>针脚平整均匀，排列有序</li>
+                                    <li>色彩过渡自然，层次分明</li>
+                                    <li>适合绣制大面积的背景和平面图案</li>
+                                </ul>
+                                <div class="technique-steps">
+                                    <h4>基本步骤：</h4>
+                                    <ol>
+                                        <li>确定绣制区域，绷紧绣布</li>
+                                        <li>按照图案轮廓，从外向内绣制</li>
+                                        <li>保持针脚长度一致，方向一致</li>
+                                        <li>注意色彩的过渡和层次变化</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technique-panel" id="tab2">
+                            <div class="technique-image">
+                                <img src="images/technique-luanzhen.jpg" alt="乱针绣">
+                            </div>
+                            <div class="technique-info">
+                                <h3>乱针绣</h3>
+                                <p>乱针绣是蜀绣中最具特色的针法之一，针脚长短不一，方向不定，看似杂乱无章，实则精心设计，能够表现出丰富的色彩变化和立体感。</p>
+                                <h4>特点：</h4>
+                                <ul>
+                                    <li>针脚长短不一，方向多变</li>
+                                    <li>色彩丰富，过渡自然</li>
+                                    <li>具有较强的立体感和质感</li>
+                                    <li>适合绣制风景、人物等复杂图案</li>
+                                </ul>
+                                <div class="technique-steps">
+                                    <h4>基本步骤：</h4>
+                                    <ol>
+                                        <li>确定绣制区域，绷紧绣布</li>
+                                        <li>根据图案需要，确定针脚方向和长度</li>
+                                        <li>从深色区域向浅色区域绣制</li>
+                                        <li>注意色彩的叠加和过渡效果</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technique-panel" id="tab3">
+                            <div class="technique-image">
+                                <img src="images/technique-gunzhen.jpg" alt="滚针绣">
+                            </div>
+                            <div class="technique-info">
+                                <h3>滚针绣</h3>
+                                <p>滚针绣是一种特殊的针法，针脚呈螺旋状排列，能够表现出丰富的质感和立体效果。滚针绣主要用于绣制花朵、果实等圆形或半圆形的图案。</p>
+                                <h4>特点：</h4>
+                                <ul>
+                                    <li>针脚呈螺旋状排列，由内向外或由外向内</li>
+                                    <li>立体感强，质感丰富</li>
+                                    <li>适合绣制花朵、果实等圆形图案</li>
+                                </ul>
+                                <div class="technique-steps">
+                                    <h4>基本步骤：</h4>
+                                    <ol>
+                                        <li>确定绣制区域的中心点</li>
+                                        <li>从中心点开始，沿螺旋方向绣制</li>
+                                        <li>保持针脚长度和间距的一致性</li>
+                                        <li>注意色彩的过渡和立体效果的表现</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technique-panel" id="tab4">
+                            <div class="technique-image">
+                                <img src="images/technique-canzhen.jpg" alt="掺针绣">
+                            </div>
+                            <div class="technique-info">
+                                <h3>掺针绣</h3>
+                                <p>掺针绣是将不同颜色的丝线混合使用的针法，能够表现出丰富的色彩变化和微妙的色调过渡。掺针绣是蜀绣色彩表现的重要手段之一。</p>
+                                <h4>特点：</h4>
+                                <ul>
+                                    <li>使用多种颜色的丝线混合绣制</li>
+                                    <li>色彩丰富，过渡自然</li>
+                                    <li>适合表现复杂的色彩变化和微妙的色调</li>
+                                </ul>
+                                <div class="technique-steps">
+                                    <h4>基本步骤：</h4>
+                                    <ol>
+                                        <li>选择适合的颜色组合</li>
+                                        <li>将不同颜色的丝线按比例混合</li>
+                                        <li>根据图案需要，确定针脚方向和长度</li>
+                                        <li>注意色彩的过渡和混合效果</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="technique-panel" id="tab5">
+                            <div class="technique-image">
+                                <img src="images/technique-taozhen.jpg" alt="套针绣">
+                            </div>
+                            <div class="technique-info">
+                                <h3>套针绣</h3>
+                                <p>套针绣是一种轮廓线针法，主要用于绣制图案的轮廓和细节。套针绣能够使图案轮廓清晰，细节丰富，是蜀绣中不可或缺的针法之一。</p>
+                                <h4>特点：</h4>
+                                <ul>
+                                    <li>针脚细密，线条流畅</li>
+                                    <li>适合绣制图案轮廓和细节</li>
+                                    <li>能够增强图案的立体感和层次感</li>
+                                </ul>
+                                <div class="technique-steps">
+                                    <h4>基本步骤：</h4>
+                                    <ol>
+                                        <li>确定图案轮廓和细节部分</li>
+                                        <li>选择适合的丝线颜色和粗细</li>
+                                        <li>沿着轮廓线进行绣制</li>
+                                        <li>保持针脚均匀，线条流畅</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 传承大师部分 -->
+        <section id="masters" class="masters-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">传承大师</h2>
+                <div class="intro-text">
+                    <p>蜀绣的传承离不开一代代蜀绣大师的辛勤付出和无私奉献。他们不仅保存和发展了蜀绣技艺，还培养了众多蜀绣人才，为蜀绣的传承和创新做出了重要贡献。</p>
+                </div>
+                
+                <div class="masters-grid">
+                    <div class="master-card">
+                        <div class="master-image">
+                            <img src="images/master-liuyufen.jpg" alt="李玉芬">
+                        </div>
+                        <div class="master-info">
+                            <h3>李玉芬</h3>
+                            <p class="master-title">国家级非物质文化遗产蜀绣代表性传承人</p>
+                            <div class="master-detail">
+                                <p>李玉芬，1940年生，四川成都人，从艺60余年，是蜀绣技艺的杰出代表。她精通各种蜀绣针法，作品《熊猫》《锦官春色》等获国际大奖。</p>
+                                <p>李玉芬致力于蜀绣技艺的传承和创新，培养了数百名蜀绣人才，被誉为"蜀绣泰斗"。2008年，她被判为国家级非物质文化遗产蜀绣代表性传承人。</p>
+                                <div class="master-achievements">
+                                    <h4>主要成就：</h4>
+                                    <ul>
+                                        <li>创新蜀绣针法10余种</li>
+                                        <li>作品获国内外大奖20余项</li>
+                                        <li>培养蜀绣人才300有余</li>
+                                        <li>出版蜀绣专著3部</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="master-card">
+                        <div class="master-image">
+                            <img src="images/master-zhangmeiying.jpg" alt="张美英">
+                        </div>
+                        <div class="master-info">
+                            <h3>张美英</h3>
+                            <p class="master-title">省级非物质文化遗产蜀绣代表性传承人</p>
+                            <div class="master-detail">
+                                <p>张美英，1955年生，四川成都人，从艺50余年，是蜀绣乱针绣的杰出代表。她的作品《蜀锦春晓》《锦江秋色》等多次获得国家级奖项。</p>
+                                <p>张美英在传统蜀绣的基础上，大胆创新，将蜀绣与现代艺术相结合，开创了蜀绣新风格。她还积极参与蜀绣教育工作，培养了大批蜀绣人才。</p>
+                                <div class="master-achievements">
+                                    <h4>主要成就：</h4>
+                                    <ul>
+                                        <li>精通乱针绣技法，作品色彩丰富</li>
+                                        <li>作品获国家级奖项15项</li>
+                                        <li>培养蜀绣人才200余名</li>
+                                        <li>参与编写蜀绣教材2部</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="master-card">
+                        <div class="master-image">
+                            <img src="images/master-wangjun.jpg" alt="王军">
+                        </div>
+                        <div class="master-info">
+                            <h3>王军</h3>
+                            <p class="master-title">市级非物质文化遗产蜀绣代表性传承人</p>
+                            <div class="master-detail">
+                                <p>王军，1965年生，四川成都人，从艺40余年，是蜀绣套针绣的杰出代表。他打破了蜀绣女性为主的传统，成为少有的男性蜀绣大师。</p>
+                                <p>王军的作品以细腻精湛的技艺和独特的艺术风格著称，《蜀中风韵》《锦官城》等作品多次获奖。他还致力于蜀绣的国际交流，多次赴海外展示蜀绣艺术。</p>
+                                <div class="master-achievements">
+                                    <h4>主要成就：</h4>
+                                    <ul>
+                                        <li>精通套针绣技法，线条流畅细腻</li>
+                                        <li>作品获国内外奖项12项</li>
+                                        <li>培养蜀绣人才150有余</li>
+                                        <li>举办蜀绣国际交流展10余次</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="master-card">
+                        <div class="master-image">
+                            <img src="images/master-chenxiaomei.jpg" alt="陈小梅">
+                        </div>
+                        <div class="master-info">
+                            <h3>陈小梅</h3>
+                            <p class="master-title">青年蜀绣艺术家</p>
+                            <div class="master-detail">
+                                <p>陈小梅，1985年生，四川成都人，从艺20余年，是新一代蜀绣艺术家的代表。她师从李玉芬大师，精通各种蜀绣针法，尤其擅长掺针绣。</p>
+                                <p>陈小梅致力于蜀绣的创新发展，将蜀绣与时尚、家居等领域相结合，开发了一系列具有现代感的蜀绣产品。她的作品《新蜀韵》《锦绣天府》等获得多项奖项。</p>
+                                <div class="master-achievements">
+                                    <h4>主要成就：</h4>
+                                    <ul>
+                                        <li>擅长掺针绣，色彩表现力强</li>
+                                        <li>作品获国内奖项8项</li>
+                                        <li>开发蜀绣创新产品30余种</li>
+                                        <li>在社交媒体上推广蜀绣文化，粉丝20万+</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="apprentice-program">
+                    <h3>传承人培养计划</h3>
+                    <p>为了更好地保护和传承蜀绣技艺，我们开展了一系列传承人培养计划，欢迎有志于学习蜀绣技艺的年轻人加入。</p>
+                    <div class="program-details">
+                        <div class="program-item">
+                            <h4>基础培训班</h4>
+                            <p>面向蜀绣初学者，教授基本针法和技巧，为期3个月。</p>
+                            <a href="#" class="btn">了解详情</a>
+                        </div>
+                        <div class="program-item">
+                            <h4>进阶研修班</h4>
+                            <p>面向有一定基础的学员，深入学习各种针法和创作技巧，为期6个月。</p>
+                            <a href="#" class="btn">了解详情</a>
+                        </div>
+                        <div class="program-item">
+                            <h4>大师工作坊</h4>
+                            <p>由蜀绣大师亲自指导，传授独特技艺和创作经验，不定期举办。</p>
+                            <a href="#" class="btn">了解详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工具材料部分 -->
+        <section id="tools" class="tools-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">工具材料</h2>
+                <div class="intro-text">
+                    <p>蜀绣的精湛技艺离不开优质的工具和材料。传统蜀绣使用的工具简单而精良，材料考究而丰富，共同构成了蜀绣艺术的物质基础。</p>
+                </div>
+                
+                <div class="tools-materials">
+                    <div class="tools-category">
+                        <h3>基本工具</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <div class="tool-image">
+                                    <img src="images/tool-needle.jpg" alt="绣针">
+                                </div>
+                                <div class="tool-info">
+                                    <h4>绣针</h4>
+                                    <p>蜀绣使用的绣针细长而坚韧，针眼较大，便于穿线。根据不同的针法和材料，选用不同粗细的绣针。</p>
+                                </div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-image">
+                                    <img src="images/tool-frame.jpg" alt="绣绷">
+                                </div>
+                                <div class="tool-info">
+                                    <h4>绣绷</h4>
+                                    <p>绣绷用于固定绣布，使其保持平整和紧绷。传统绣绷多为木质，圆形或方形，大小根据作品尺寸而定。</p>
+                                </div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-image">
+                                    <img src="images/tool-scissors.jpg" alt="绣剪">
+                                </div>
+                                <div class="tool-info">
+                                    <h4>绣剪</h4>
+                                    <p>绣剪小巧精致，锋利无比，用于剪断丝线。好的绣剪能够精确剪断单根丝线，不伤及其他线条。</p>
+                                </div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-image">
+                                    <img src="images/tool-thimble.jpg" alt="顶针">
+                                </div>
+                                <div class="tool-info">
+                                    <h4>顶针</h4>
+                                    <p>顶针戴在手指上，用于推针，保护手指。传统顶针多为金属或玉石制成，表面有细小凹槽，增加摩擦力。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="materials-category">
+                        <h3>主要材料</h3>
+                        <div class="materials-grid">
+                            <div class="material-item">
+                                <div class="material-image">
+                                    <img src="images/material-silk.jpg" alt="蚕丝线">
+                                </div>
+                                <div class="material-info">
+                                    <h4>蚕丝线</h4>
+                                    <p>蜀绣主要使用蚕丝线，质地柔软，光泽自然，色彩丰富。传统蚕丝线采用天然染料染色，色彩持久不褪。</p>
+                                    <div class="material-types">
+                                        <h5>常用种类：</h5>
+                                        <ul>
+                                            <li>单股丝线：细腻光滑，适合细致图案</li>
+                                            <li>双股丝线：强度较高，适合轮廓线条</li>
+                                            <li>多股丝线：丰满厚实，适合大面积绣制</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="material-item">
+                                <div class="material-image">
+                                    <img src="images/material-fabric.jpg" alt="绣布">
+                                </div>
+                                <div class="material-info">
+                                    <h4>绣布</h4>
+                                    <p>蜀绣的底布多选用丝绸、绢、缎等高质量面料，质地细密平整，便于绣制。不同的作品选用不同的底布，以达到最佳效果。</p>
+                                    <div class="material-types">
+                                        <h5>常用种类：</h5>
+                                        <ul>
+                                            <li>真丝绢：质地轻薄，透光性好，适合细致作品</li>
+                                            <li>丝绸缎：质地厚实，光泽感强，适合正式作品</li>
+                                            <li>棉麻布：质地自然，适合日常装饰品</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="material-item">
+                                <div class="material-image">
+                                    <img src="images/material-dye.jpg" alt="染料">
+                                </div>
+                                <div class="material-info">
+                                    <h4>染料</h4>
+                                    <p>传统蜀绣使用天然染料，如植物染料（靛蓝、茜草、槐花等）和矿物染料（朱砂、石青等）。现代蜀绣也使用化学染料，色彩更加丰富稳定。</p>
+                                    <div class="material-types">
+                                        <h5>常用种类：</h5>
+                                        <ul>
+                                            <li>植物染料：色彩自然柔和，环保健康</li>
+                                            <li>矿物染料：色彩鲜艳持久，适合特殊效果</li>
+                                            <li>现代染料：色彩丰富稳定，使用方便</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tools-care">
+                    <h3>工具保养与材料选购</h3>
+                    <div class="care-tips">
+                        <div class="tip-item">
+                            <h4>绣针保养</h4>
+                            <p>使用后擦拭干净，插入针插或针包中保存，避免生锈和弯曲。定期用细砂纸轻轻打磨针尖，保持锋利。</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>绣绷保养</h4>
+                            <p>使用后松开绣布，避免长时间绷紧导致变形。木质绣绷定期涂抹木蜡油，防止开裂和虫蛀。</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>丝线选购</h4>
+                            <p>选择光泽均匀、手感柔软、不易断裂的丝线。购买时可轻轻拉扯测试强度，观察色彩是否均匀。</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>绣布选购</h4>
+                            <p>选择织物密度均匀、无瑕疵的绣布。购买前可对着光源查看是否有瑕疵，触摸感受质地是否平整。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="蜀绣非遗技艺">
+                    <p>传承千年的艺术瑰宝</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">蜀绣历史</a></li>
+                        <li><a href="craftsmanship.html">技艺传承</a></li>
+                        <li><a href="gallery.html">作品欣赏</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系方式</h3>
+                    <p><i class="icon-location"></i> 四川省成都市锦江区蜀绣博物馆</p>
+                    <p><i class="icon-phone"></i> 028-12345678</p>
+                    <p><i class="icon-email"></i> info@shuixiu.com</p>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>订阅资讯</h3>
+                    <p>订阅我们的电子通讯，获取最新蜀绣资讯</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="您的邮箱地址">
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 蜀绣非遗技艺保护中心 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 技法选项卡切换
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.technique-tabs .tab');
+            const panels = document.querySelectorAll('.technique-panel');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // 移除所有选项卡的活动状态
+                    tabs.forEach(t => t.classList.remove('active'));
+                    // 添加当前选项卡的活动状态
+                    this.classList.add('active');
+                    
+                    // 隐藏所有面板
+                    panels.forEach(panel => panel.classList.remove('active'));
+                    // 显示当前选项卡对应的面板
+                    const targetPanel = document.getElementById(this.getAttribute('data-tab'));
+                    if (targetPanel) {
+                        targetPanel.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

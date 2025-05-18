@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品欣赏 - 蜀绣非遗技艺</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="蜀绣非遗技艺">
+                <h1>蜀绣非遗技艺</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li>
+                        <a href="history.html">蜀绣历史</a>
+                        <ul class="sub-nav">
+                            <li><a href="history.html#origin">起源</a></li>
+                            <li><a href="history.html#development">发展</a></li>
+                            <li><a href="history.html#modern">现代传承</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="craftsmanship.html">技艺传承</a>
+                        <ul class="sub-nav">
+                            <li><a href="craftsmanship.html#techniques">绣制技法</a></li>
+                            <li><a href="craftsmanship.html#masters">传承大师</a></li>
+                            <li><a href="craftsmanship.html#tools">工具材料</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="gallery.html">作品欣赏</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>作品欣赏</h1>
+            <p>领略蜀绣艺术的精湛之美</p>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="gallery-page">
+        <!-- 作品分类筛选 -->
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label>作品分类：</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">全部</button>
+                            <button class="filter-btn" data-filter="traditional">传统题材</button>
+                            <button class="filter-btn" data-filter="modern">现代创新</button>
+                            <button class="filter-btn" data-filter="portrait">人物肖像</button>
+                            <button class="filter-btn" data-filter="landscape">山水风景</button>
+                            <button class="filter-btn" data-filter="animal">花鸟动物</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>针法类型：</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-technique="all">全部</button>
+                            <button class="filter-btn" data-technique="pingzhen">平针绣</button>
+                            <button class="filter-btn" data-technique="luanzhen">乱针绣</button>
+                            <button class="filter-btn" data-technique="gunzhen">滚针绣</button>
+                            <button class="filter-btn" data-technique="canzhen">掺针绣</button>
+                            <button class="filter-btn" data-technique="taozhen">套针绣</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="gallery-search" placeholder="搜索作品名称或作者...">
+                    <button id="search-btn">搜索</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品展示区 -->
+        <section class="gallery-showcase">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- 作品1 -->
+                    <div class="gallery-item" data-category="traditional landscape" data-technique="luanzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-1.jpg" alt="锦官春色">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>锦官春色</h3>
+                                    <p>作者：李玉芬</p>
+                                    <button class="view-details" data-id="1">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>锦官春色</h3>
+                            <p>乱针绣 | 传统题材</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品2 -->
+                    <div class="gallery-item" data-category="traditional animal" data-technique="pingzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-2.jpg" alt="熊猫">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>熊猫</h3>
+                                    <p>作者：李玉芬</p>
+                                    <button class="view-details" data-id="2">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>熊猫</h3>
+                            <p>平针绣 | 花鸟动物</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品3 -->
+                    <div class="gallery-item" data-category="modern landscape" data-technique="luanzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-3.jpg" alt="蜀锦春晓">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>蜀锦春晓</h3>
+                                    <p>作者：张美英</p>
+                                    <button class="view-details" data-id="3">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>蜀锦春晓</h3>
+                            <p>乱针绣 | 现代创新</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品4 -->
+                    <div class="gallery-item" data-category="traditional portrait" data-technique="canzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-4.jpg" alt="蜀女">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>蜀女</h3>
+                                    <p>作者：王军</p>
+                                    <button class="view-details" data-id="4">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>蜀女</h3>
+                            <p>掺针绣 | 人物肖像</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品5 -->
+                    <div class="gallery-item" data-category="modern animal" data-technique="gunzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-5.jpg" alt="锦鲤">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>锦鲤</h3>
+                                    <p>作者：陈小梅</p>
+                                    <button class="view-details" data-id="5">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>锦鲤</h3>
+                            <p>滚针绣 | 花鸟动物</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品6 -->
+                    <div class="gallery-item" data-category="traditional landscape" data-technique="taozhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-6.jpg" alt="锦官城">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>锦官城</h3>
+                                    <p>作者：王军</p>
+                                    <button class="view-details" data-id="6">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>锦官城</h3>
+                            <p>套针绣 | 山水风景</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品7 -->
+                    <div class="gallery-item" data-category="modern portrait" data-technique="luanzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-7.jpg" alt="新蜀韵">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>新蜀韵</h3>
+                                    <p>作者：陈小梅</p>
+                                    <button class="view-details" data-id="7">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>新蜀韵</h3>
+                            <p>乱针绣 | 现代创新</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品8 -->
+                    <div class="gallery-item" data-category="traditional animal" data-technique="pingzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-8.jpg" alt="牡丹">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>牡丹</h3>
+                                    <p>作者：李玉芬</p>
+                                    <button class="view-details" data-id="8">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>牡丹</h3>
+                            <p>平针绣 | 花鸟动物</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品9 -->
+                    <div class="gallery-item" data-category="modern landscape" data-technique="canzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-9.jpg" alt="锦绣天府">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>锦绣天府</h3>
+                                    <p>作者：陈小梅</p>
+                                    <button class="view-details" data-id="9">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>锦绣天府</h3>
+                            <p>掺针绣 | 现代创新</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品10 -->
+                    <div class="gallery-item" data-category="traditional portrait" data-technique="taozhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-10.jpg" alt="蜀中风韵">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>蜀中风韵</h3>
+                                    <p>作者：王军</p>
+                                    <button class="view-details" data-id="10">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>蜀中风韵</h3>
+                            <p>套针绣 | 人物肖像</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品11 -->
+                    <div class="gallery-item" data-category="modern animal" data-technique="pingzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-11.jpg" alt="荷塘月色">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>荷塘月色</h3>
+                                    <p>作者：张美英</p>
+                                    <button class="view-details" data-id="11">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>荷塘月色</h3>
+                            <p>平针绣 | 花鸟动物</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 作品12 -->
+                    <div class="gallery-item" data-category="traditional landscape" data-technique="gunzhen">
+                        <div class="gallery-image">
+                            <img src="images/gallery-12.jpg" alt="锦江秋色">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>锦江秋色</h3>
+                                    <p>作者：张美英</p>
+                                    <button class="view-details" data-id="12">查看详情</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>锦江秋色</h3>
+                            <p>滚针绣 | 山水风景</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 加载更多按钮 -->
+                <div class="load-more">
+                    <button id="load-more-btn" class="btn">加载更多</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 作品详情弹窗 -->
+        <div id="gallery-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="work-details">
+                    <div class="work-image">
+                        <img id="modal-image" src="" alt="">
+                    </div>
+                    <div class="work-info">
+                        <h2 id="modal-title"></h2>
+                        <div class="work-meta">
+                            <p><strong>作者：</strong><span id="modal-author"></span></p>
+                            <p><strong>创作年份：</strong><span id="modal-year"></span></p>
+                            <p><strong>尺寸：</strong><span id="modal-size"></span></p>
+                            <p><strong>针法：</strong><span id="modal-technique"></span></p>
+                            <p><strong>材质：</strong><span id="modal-material"></span></p>
+                        </div>
+                        <div class="work-description">
+                            <h3>作品简介</h3>
+                            <p id="modal-description"></p>
+                        </div>
+                        <div class="work-features">
+                            <h3>艺术特点</h3>
+                            <ul id="modal-features"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-detail-images">
+                    <h3>细节展示</h3>
+                    <div class="detail-images-container" id="modal-details">
+                        <!-- 细节图片将通过JS动态添加 -->
+                    </div>
+                </div>
+                <div class="related-works">
+                    <h3>相关作品</h3>
+                    <div class="related-works-container" id="modal-related">
+                        <!-- 相关作品将通过JS动态添加 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 展览活动部分 -->
+        <section class="exhibitions-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">展览活动</h2>
+                <div class="intro-text">
+                    <p>我们定期举办蜀绣作品展览和文化活动，欢迎广大蜀绣爱好者参与。以下是近期的展览信息：</p>
+                </div>
+                
+                <div class="exhibitions-slider">
+                    <div class="exhibition-card">
+                        <div class="exhibition-image">
+                            <img src="images/exhibition-1.jpg" alt="蜀绣传承与创新展">
+                            <div class="exhibition-date">
+                                <span class="month">6月</span>
+                                <span class="day">15-30</span>
+                            </div>
+                        </div>
+                        <div class="exhibition-info">
+                            <h3>蜀绣传承与创新展</h3>
+                            <p class="exhibition-location"><i class="icon-location"></i> 成都博物馆</p>
+                            <p class="exhibition-description">展示蜀绣从传统到现代的发展历程，包括50余件精品蜀绣作品。</p>
+                            <a href="#" class="btn">了解详情</a>
+                        </div>
+                    </div>
+                    
+                    <div class="exhibition-card">
+                        <div class="exhibition-image">
+                            <img src="images/exhibition-2.jpg" alt="蜀绣大师作品展">
+                            <div class="exhibition-date">
+                                <span class="month">8月</span>
+                                <span class="day">10-25</span>
+                            </div>
+                        </div>
+                        <div class="exhibition-info">
+                            <h3>蜀绣大师作品展</h3>
+                            <p class="exhibition-location"><i class="icon-location"></i> 四川省美术馆</p>
+                            <p class="exhibition-description">汇集10位蜀绣大师的代表作品，展示蜀绣艺术的最高水平。</p>
+                            <a href="#" class="btn">了解详情</a>
+                        </div>
+                    </div>
+                    
+                    <div class="exhibition-card">
+                        <div class="exhibition-image">
+                            <img src="images/exhibition-3.jpg" alt="蜀绣与现代生活展">
+                            <div class="exhibition-date">
+                                <span class="month">10月</span>
+                                <span class="day">5-20</span>
+                            </div>
+                        </div>
+                        <div class="exhibition-info">
+                            <h3>蜀绣与现代生活展</h3>
+                            <p class="exhibition-location"><i class="icon-location"></i> 成都当代艺术中心</p>
+                            <p class="exhibition-description">探索蜀绣在现代生活中的应用，展示蜀绣与时尚、家居的融合。</p>
+                            <a href="#" class="btn">了解详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 收藏与保养部分 -->
+        <section class="collection-care-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">收藏与保养</h2>
+                <div class="collection-care-content">
+                    <div class="collection-care-image">
+                        <img src="images/collection-care.jpg" alt="蜀绣作品保养">
+                    </div>
+                    <div class="collection-care-text">
+                        <h3>如何收藏蜀绣作品</h3>
+                        <p>蜀绣作品是珍贵的艺术品，正确的收藏和保养可以延长其寿命，保持其艺术价值。以下是一些收藏和保养蜀绣作品的建议：</p>
+                        <div class="care-tips">
+                            <div class="care-tip">
+                                <h4><i class="icon-light"></i> 避免阳光直射</h4>
+                                <p>长时间的阳光直射会导致蜀绣作品的颜色褪色，应将作品放置在避光处或使用防紫外线玻璃框装裱。</p>
+                            </div>
+                            <div class="care-tip">
+                                <h4><i class="icon-humidity"></i> 控制湿度</h4>
+                                <p>过高或过低的湿度都会对蜀绣作品造成损害。理想的相对湿度应保持在45%-55%之间。</p>
+                            </div>
+                            <div class="care-tip">
+                                <h4><i class="icon-temperature"></i> 适宜温度</h4>
+                                <p>蜀绣作品应存放在温度适宜的环境中，避免温度剧烈变化。理想温度为18°C-22°C。</p>
+                            </div>
+                            <div class="care-tip">
+                                <h4><i class="icon-clean"></i> 定期清洁</h4>
+                                <p>使用柔软的毛刷轻轻清除蜀绣作品表面的灰尘，切勿使用湿布或化学清洁剂。</p>
+                            </div>
+                            <div class="care-tip">
+                                <h4><i class="icon-display"></i> 正确展示</h4>
+                                <p>蜀绣作品最好装裱在框内展示，避免直接接触空气和灰尘。展示时应避免过度拉伸或折叠。</p>
+                            </div>
+                            <div class="care-tip">
+                                <h4><i class="icon-storage"></i> 妥善存放</h4>
+                                <p>不展示时，应将蜀绣作品平放在无酸纸中，存放在干燥、通风、避光的环境中。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="蜀绣非遗技艺">
+                    <p>传承千年的艺术瑰宝</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">蜀绣历史</a></li>
+                        <li><a href="craftsmanship.html">技艺传承</a></li>
+                        <li><a href="gallery.html">作品欣赏</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系方式</h3>
+                    <p><i class="icon-location"></i> 四川省成都市锦江区蜀绣博物馆</p>
+                    <p><i class="icon-phone"></i> 028-12345678</p>
+                    <p><i class="icon-email"></i> info@shuixiu.com</p>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>订阅资讯</h3>
+                    <p>订阅我们的电子通讯，获取最新蜀绣资讯</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="您的邮箱地址">
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 蜀绣非遗技艺保护中心 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 作品筛选功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 分类筛选
+            const categoryButtons = document.querySelectorAll('[data-filter]');
+            const techniqueButtons = document.querySelectorAll('[data-technique]');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            // 分类按钮点击事件
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的活动状态
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    // 添加当前按钮的活动状态
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    filterGallery();
+                });
+            });
+            
+            // 针法按钮点击事件
+            techniqueButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的活动状态
+                    techniqueButtons.forEach(btn => btn.classList.remove('active'));
+                    // 添加当前按钮的活动状态
+                    this.classList.add('active');
+                    
+                    const technique = this.getAttribute('data-technique');
+                    filterGallery();
+                });
+            });
+            
+            // 搜索功能
+            const searchInput = document.getElementById('gallery-search');
+            const searchBtn = document.getElementById('search-btn');
+            
+            searchBtn.addEventListener('click', function() {
+                filterGallery();
+            });
+            
+            searchInput.addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    filterGallery();
+                }
+            });
+            
+            // 筛选画廊函数
+            function filterGallery() {
+                const activeCategory = document.querySelector('[data-filter].active').getAttribute('data-filter');
+                const activeTechnique = document.querySelector('[data-technique].active').getAttribute('data-technique');
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                galleryItems.forEach(item => {
+                    const categories = item.getAttribute('data-category').split(' ');
+                    const technique = item.getAttribute('data-technique');
+                    const title = item.querySelector('h3').textContent.toLowerCase();
+                    const author = item.querySelector('.overlay-content p').textContent.toLowerCase();
+                    
+                    // 检查是否符合所有筛选条件
+                    const matchCategory = activeCategory === 'all' || categories.includes(activeCategory);
+                    const matchTechnique = activeTechnique === 'all' || technique === activeTechnique;
+                    const matchSearch = searchTerm === '' || title.includes(searchTerm) || author.includes(searchTerm);
+                    
+                    // 显示或隐藏项目
+                    if (matchCategory && matchTechnique && matchSearch) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+            
+            // 作品详情弹窗
+            const modal = document.getElementById('gallery-modal');
+            const detailButtons = document.querySelectorAll('.view-details');
+            const closeModal = document.querySelector('.close-modal');
+            
+            // 作品数据（实际应用中可能从服务器获取）
+            const worksData = {
+                1: {
+                    title: "锦官春色",
+                    author: "李玉芬",
+                    year: "2010",
+                    size: "120cm × 80cm",
+                    technique: "乱针绣",
+                    material: "真丝绢、蚕丝线",
+                    description: "《锦官春色》是李玉芬大师的代表作之一，描绘了成都锦江春日的美丽景色。作品采用乱针绣技法，通过丰富的色彩变化和精细的针法，展现了锦江两岸的繁花似锦和春意盎然。",
+                    features: [
+                        "色彩丰富，过渡自然，展现春日的生机与活力",
+                        "针法精细，层次分明，体现出乱针绣的艺术特点",
+                        "构图巧妙，远近结合，营造出空间感和立体感",
+                        "作品曾获第十届中国工艺美术大师作品展金奖"
+                    ],
+                    details: ["detail-1-1.jpg", "detail-1-2.jpg", "detail-1-3.jpg"],
+                    related: [3, 6, 12]
+                },
+                // 其他作品数据...
+            };
+            
+            // 打开弹窗
+            detailButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const workId = this.getAttribute('data-id');
+                    const workData = worksData[workId] || {
+                        title: "作品信息",
+                        author: "未知",
+                        year: "未知",
+                        size: "未知",
+                        technique: "未知",
+                        material: "未知",
+                        description: "暂无描述",
+                        features: ["暂无特点"],
+                        details: [],
+                        related: []
+                    };
+                    
+                    // 填充弹窗内容
+                    document.getElementById('modal-title').textContent = workData.title;
+                    document.getElementById('modal-author').textContent = workData.author;
+                    document.getElementById('modal-year').textContent = workData.year;
+                    document.getElementById('modal-size').textContent = workData.size;
+                    document.getElementById('modal-technique').textContent = workData.technique;
+                    document.getElementById('modal-material').textContent = workData.material;
+                    document.getElementById('modal-description').textContent = workData.description;
+                    
+                    // 填充特点列表
+                    const featuresList = document.getElementById('modal-features');
+                    featuresList.innerHTML = '';
+                    workData.features.forEach(feature => {
+                        const li = document.createElement('li');
+                        li.textContent = feature;
+                        featuresList.appendChild(li);
+                    });
+                    
+                    // 设置主图
+                    document.getElementById('modal-image').src = `images/gallery-${workId}.jpg`;
+                    document.getElementById('modal-image').alt = workData.title;
+                    
+                    // 显示弹窗
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // 防止背景滚动
+                });
+            });
+            
+            // 关闭弹窗
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // 恢复背景滚动
+            });
+            
+            // 点击弹窗外部关闭
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

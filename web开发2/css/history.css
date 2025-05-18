@@ -1,0 +1,507 @@
+/* 蜀绣历史页面样式 */
+
+/* 历史时间线部分 */
+.history-timeline {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline-date {
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    right: calc(50% + 40px);
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    left: calc(50% + 40px);
+}
+
+.timeline-content h3 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.timeline-image {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/* 历史起源部分 */
+.origin-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.origin-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.origin-text h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.origin-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.origin-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 历史发展部分 */
+.development-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.development-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.development-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.development-card:hover {
+    transform: translateY(-10px);
+}
+
+.development-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.development-card h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.development-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* 历史文献部分 */
+.literature-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.literature-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.literature-text h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.literature-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.literature-quote {
+    background-color: white;
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: var(--dark-color);
+}
+
+.literature-source {
+    text-align: right;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.literature-images {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.literature-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.literature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.literature-caption {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* 历史人物部分 */
+.historical-figures {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.figures-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.figure-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.figure-card:hover {
+    transform: translateY(-10px);
+}
+
+.figure-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.figure-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.figure-card:hover .figure-image img {
+    transform: scale(1.1);
+}
+
+.figure-info {
+    padding: 20px;
+}
+
+.figure-info h3 {
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.figure-info .figure-period {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.figure-info p {
+    color: var(--text-light);
+}
+
+/* 历史影响部分 */
+.impact-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.impact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.impact-text h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.impact-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.impact-list {
+    margin: 20px 0;
+}
+
+.impact-list li {
+    margin-bottom: 10px;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 25px;
+}
+
+.impact-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.impact-image {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.impact-img {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.impact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 相关资料部分 */
+.resources-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.resources-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.resource-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.resource-icon i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.resource-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.resource-card p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.resource-link {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.resource-link:hover {
+    color: var(--secondary-color);
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .origin-content,
+    .literature-content,
+    .impact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 60px;
+        padding-right: 0;
+        text-align: left;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -10px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-date,
+    .timeline-item:nth-child(even) .timeline-date {
+        left: 60px;
+        right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .development-cards,
+    .figures-container,
+    .resources-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .literature-images,
+    .impact-image {
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .development-cards,
+    .figures-container,
+    .resources-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: 0 !important;
+        top: -30px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+}

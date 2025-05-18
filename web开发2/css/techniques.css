@@ -1,0 +1,412 @@
+/* 蜀绣技艺传承页面样式 */
+
+/* 技艺概述部分 */
+.techniques-overview {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.overview-text h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.overview-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.overview-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 针法展示部分 */
+.stitch-showcase {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.stitch-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.stitch-tab {
+    padding: 10px 20px;
+    margin: 0 5px 10px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.stitch-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.stitch-content {
+    display: none;
+}
+
+.stitch-content.active {
+    display: block;
+}
+
+.stitch-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stitch-image {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.stitch-info h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.stitch-info p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.stitch-features {
+    margin: 20px 0;
+}
+
+.stitch-features li {
+    margin-bottom: 10px;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 25px;
+}
+
+.stitch-features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* 传承人部分 */
+.masters-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.masters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.master-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.master-card:hover {
+    transform: translateY(-10px);
+}
+
+.master-image {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.master-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.master-card:hover .master-image img {
+    transform: scale(1.1);
+}
+
+.master-level {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.master-info {
+    padding: 20px;
+}
+
+.master-info h3 {
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.master-info .master-title {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.master-info p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.master-achievements {
+    margin-top: 15px;
+}
+
+.master-achievements h4 {
+    font-size: 1rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.master-achievements ul {
+    padding-left: 20px;
+}
+
+.master-achievements li {
+    color: var(--text-light);
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+/* 传承教育部分 */
+.education-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.education-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.education-text h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+.education-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.education-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-programs {
+    margin-top: 60px;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.program-icon i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.program-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.program-card p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.program-details {
+    margin-top: 15px;
+}
+
+.program-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.program-details i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* 创新发展部分 */
+.innovation-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.innovation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.innovation-card {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.innovation-card:hover {
+    transform: translateY(-10px);
+}
+
+.innovation-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.innovation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.innovation-card:hover .innovation-image img {
+    transform: scale(1.1);
+}
+
+.innovation-info {
+    padding: 20px;
+}
+
+.innovation-info h3 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.innovation-info p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.innovation-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.innovation-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.innovation-meta i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .overview-content,
+    .stitch-detail,
+    .education-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .masters-grid,
+    .program-cards,
+    .innovation-cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .stitch-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stitch-tab {
+        width: 80%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .masters-grid,
+    .program-cards,
+    .innovation-cards {
+        grid-template-columns: 1fr;
+    }
+}

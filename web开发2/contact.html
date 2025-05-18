@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 蜀绣非遗技艺</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="蜀绣非遗技艺">
+                <h1>蜀绣非遗技艺</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li>
+                        <a href="history.html">蜀绣历史</a>
+                        <ul class="sub-nav">
+                            <li><a href="history.html#origin">起源</a></li>
+                            <li><a href="history.html#development">发展</a></li>
+                            <li><a href="history.html#modern">现代传承</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="craftsmanship.html">技艺传承</a>
+                        <ul class="sub-nav">
+                            <li><a href="craftsmanship.html#techniques">绣制技法</a></li>
+                            <li><a href="craftsmanship.html#masters">传承大师</a></li>
+                            <li><a href="craftsmanship.html#tools">工具材料</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">作品欣赏</a></li>
+                    <li class="active"><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>欢迎与我们交流互动，共同传承蜀绣文化</p>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="contact-page">
+        <!-- 联系信息与表单 -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>联系方式</h2>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="icon-location"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>地址</h3>
+                                <p>四川省成都市锦江区蜀绣博物馆</p>
+                                <p>邮编：610021</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="icon-phone"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>电话</h3>
+                                <p>总机：028-12345678</p>
+                                <p>参观预约：028-87654321</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="icon-email"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>电子邮箱</h3>
+                                <p>info@shuixiu.com</p>
+                                <p>service@shuixiu.com（客服）</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="icon-time"></i>
+                            </div>
+                            <div class="info-text">
+                                <h3>开放时间</h3>
+                                <p>周二至周日：9:00-17:00（16:30停止入场）</p>
+                                <p>周一闭馆（法定节假日除外）</p>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <h3>关注我们</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon"><i class="icon-weibo"></i></a>
+                                <a href="#" class="social-icon"><i class="icon-wechat"></i></a>
+                                <a href="#" class="social-icon"><i class="icon-douyin"></i></a>
+                                <a href="#" class="social-icon"><i class="icon-bilibili"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h2>留言咨询</h2>
+                        <p>如有任何问题或建议，欢迎填写以下表单与我们联系，我们将尽快回复您。</p>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">姓名 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">电子邮箱 <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">电话</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">主题 <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">请选择咨询主题</option>
+                                    <option value="visit">参观咨询</option>
+                                    <option value="course">课程咨询</option>
+                                    <option value="cooperation">合作洽谈</option>
+                                    <option value="purchase">作品购买</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">留言内容 <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="captcha">验证码 <span class="required">*</span></label>
+                                <div class="captcha-container">
+                                    <input type="text" id="captcha" name="captcha" required>
+                                    <div class="captcha-image">
+                                        <img src="images/captcha.jpg" alt="验证码">
+                                        <button type="button" class="refresh-captcha">刷新</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <label for="agreement">我已阅读并同意<a href="#" class="privacy-link">隐私政策</a></label>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn submit-btn">提交留言</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 地图区域 -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">位置导航</h2>
+                <div class="map-container">
+                    <div id="map" class="map-embed">
+                        <!-- 这里将嵌入地图，可以使用百度地图或高德地图API -->
+                        <img src="images/map.jpg" alt="蜀绣博物馆地图" class="placeholder-map">
+                    </div>
+                    <div class="map-info">
+                        <div class="transportation-info">
+                            <h3>交通指南</h3>
+                            <div class="transport-item">
+                                <h4><i class="icon-bus"></i> 公交路线</h4>
+                                <p>乘坐1路、10路、45路、58路、81路至"蜀绣博物馆"站下车</p>
+                            </div>
+                            <div class="transport-item">
+                                <h4><i class="icon-subway"></i> 地铁路线</h4>
+                                <p>乘坐地铁3号线至"锦江区文化中心"站下车，从D出口出站步行约500米</p>
+                            </div>
+                            <div class="transport-item">
+                                <h4><i class="icon-car"></i> 自驾路线</h4>
+                                <p>导航至"四川省成都市锦江区蜀绣博物馆"，馆内设有停车场（收费）</p>
+                            </div>
+                        </div>
+                        <div class="nearby-attractions">
+                            <h3>周边景点</h3>
+                            <ul>
+                                <li>锦里古街（步行约15分钟）</li>
+                                <li>武侯祠（步行约20分钟）</li>
+                                <li>杜甫草堂（驾车约10分钟）</li>
+                                <li>宽窄巷子（驾车约15分钟）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="faq-section animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">常见问题</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>参观博物馆需要预约吗？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>一般情况下不需要预约，但团体参观（10人以上）建议提前3天电话预约。特殊展览或活动可能需要预约，请关注官方公告。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>博物馆内可以拍照吗？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>普通展区可以拍照，但不允许使用闪光灯和三脚架。部分特展或珍贵文物区域可能禁止拍照，请遵守现场指示。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何报名参加蜀绣培训课程？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>可通过官网"技艺传承"页面中的"传承人培养计划"了解课程信息并在线报名，也可致电028-87654321咨询详情。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>博物馆是否提供讲解服务？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们提供中文讲解服务（免费）和英文讲解服务（收费）。个人参观可在前台预约当日讲解，团体参观建议提前预约。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何购买蜀绣作品？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以在博物馆内的文创商店购买蜀绣作品，也可以通过我们的官方网店或联系客服电话进行订购。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>是否接受国际合作或交流？</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们欢迎各类国际文化交流与合作，如有意向，请发送详细合作方案至info@shuixiu.com，我们会尽快回复。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 反馈与建议 -->
+        <section class="feedback-section animate-on-scroll">
+            <div class="container">
+                <div class="feedback-content">
+                    <div class="feedback-text">
+                        <h2>您的反馈对我们很重要</h2>
+                        <p>我们致力于不断改进服务质量，提升参观体验。如果您有任何建议或意见，欢迎与我们分享。</p>
+                        <p>您可以通过上方的留言表单、电子邮件或电话与我们联系，也可以在参观结束后填写意见反馈表。</p>
+                        <p>感谢您对蜀绣非遗技艺保护与传承工作的支持！</p>
+                    </div>
+                    <div class="feedback-image">
+                        <img src="images/feedback.jpg" alt="反馈与建议">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部区域 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="蜀绣非遗技艺">
+                    <p>传承千年的艺术瑰宝</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">蜀绣历史</a></li>
+                        <li><a href="craftsmanship.html">技艺传承</a></li>
+                        <li><a href="gallery.html">作品欣赏</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>联系方式</h3>
+                    <p><i class="icon-location"></i> 四川省成都市锦江区蜀绣博物馆</p>
+                    <p><i class="icon-phone"></i> 028-12345678</p>
+                    <p><i class="icon-email"></i> info@shuixiu.com</p>
+                </div>
+                <div class="footer-subscribe">
+                    <h3>订阅资讯</h3>
+                    <p>订阅我们的电子通讯，获取最新蜀绣资讯</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="您的邮箱地址">
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 蜀绣非遗技艺保护中心 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ折叠功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggleIcon = item.querySelector('.toggle-icon');
+                
+                question.addEventListener('click', function() {
+                    // 检查当前项是否已展开
+                    const isOpen = answer.style.display === 'block';
+                    
+                    // 关闭所有FAQ项
+                    faqItems.forEach(faq => {
+                        faq.querySelector('.faq-answer').style.display = 'none';
+                        faq.querySelector('.toggle-icon').textContent = '+';
+                    });
+                    
+                    // 如果当前项未展开，则展开它
+                    if (!isOpen) {
+                        answer.style.display = 'block';
+                        toggleIcon.textContent = '-';
+                    }
+                });
+            });
+            
+            // 表单验证
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // 简单验证
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    const captcha = document.getElementById('captcha').value;
+                    const agreement = document.getElementById('agreement').checked;
+                    
+                    if (!name || !email || !subject || !message || !captcha || !agreement) {
+                        alert('请填写所有必填字段并同意隐私政策');
+                        return;
+                    }
+                    
+                    // 模拟表单提交
+                    alert('感谢您的留言！我们将尽快回复您。');
+                    contactForm.reset();
+                });
+            }
+            
+            // 刷新验证码
+            const refreshButton = document.querySelector('.refresh-captcha');
+            if (refreshButton) {
+                refreshButton.addEventListener('click', function() {
+                    const captchaImg = document.querySelector('.captcha-image img');
+                    if (captchaImg) {
+                        // 添加时间戳参数，强制浏览器重新加载图片
+                        captchaImg.src = 'images/captcha.jpg?' + new Date().getTime();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,488 @@
+/* 作品欣赏页面样式 */
+
+/* 作品筛选部分 */
+.gallery-filters {
+    padding: 40px 0;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--dark-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 作品展示部分 */
+.gallery-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .gallery-image img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.overlay-content h3 {
+    margin-bottom: 10px;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: var(--secondary-color);
+}
+
+.gallery-info {
+    padding: 20px;
+}
+
+.gallery-info h3 {
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.gallery-info .gallery-category {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.gallery-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.gallery-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.gallery-meta i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+/* 作品详情弹窗 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1100;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: 50px auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.close-modal:hover {
+    background-color: var(--primary-color);
+}
+
+.work-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.work-image {
+    height: 500px;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-info {
+    padding: 40px;
+    background-color: white;
+}
+
+.work-info h2 {
+    margin-bottom: 10px;
+    color: var(--dark-color);
+    font-size: 1.8rem;
+}
+
+.work-info .work-category {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.work-description {
+    margin-bottom: 30px;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.work-specs {
+    margin-bottom: 30px;
+}
+
+.work-specs h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+.specs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.specs-list li {
+    color: var(--text-light);
+}
+
+.specs-list span {
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-right: 5px;
+}
+
+.work-artist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.artist-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.artist-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info h3 {
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.artist-info p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.work-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.action-btn i {
+    margin-right: 8px;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--dark-color);
+    border: 1px solid var(--border-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--light-color);
+}
+
+/* 相关作品部分 */
+.related-works {
+    padding: 40px;
+    background-color: var(--light-color);
+}
+
+.related-works h3 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.related-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.related-item:hover {
+    transform: translateY(-5px);
+}
+
+.related-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.related-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.related-item:hover .related-image img {
+    transform: scale(1.1);
+}
+
+.related-info {
+    padding: 15px;
+}
+
+.related-info h4 {
+    margin-bottom: 5px;
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+.related-info p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* 分页部分 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    color: var(--dark-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.page-item.disabled .page-link {
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .work-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .work-image {
+        height: 400px;
+    }
+    
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-grid,
+    .related-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .specs-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .work-info {
+        padding: 20px;
+    }
+    
+    .work-actions {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
